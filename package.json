@@ -1,8 +1,9 @@
 {
-    "name": "time-tracker",
-    "displayName": "time-tracker",
-    "description": "",
-    "version": "0.0.1",
+    "name": "language-time-tracker",
+    "displayName": "Language Time Tracker",
+    "description": "This tracks the time spent on different programming languages.",
+    "version": "1.0.0",
+    "publisher": "kaustubh",
     "engines": {
         "vscode": "^1.95.0"
     },
@@ -12,6 +13,11 @@
     "activationEvents": [
         "onStartupFinished"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itzVort3x1/vscode-time-tracker.git"
+    },
+    "icon": "images/study.png",
     "main": "./out/extension.js",
     "contributes": {
         "viewsContainers": {
