@@ -2,7 +2,7 @@
     "name": "language-time-tracker",
     "displayName": "Kaustubh",
     "description": "This tracks the time spent on different programming languages.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "LanguageTimeTracker",
     "engines": {
         "vscode": "^1.95.0"
