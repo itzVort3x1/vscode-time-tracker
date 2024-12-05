@@ -3,7 +3,7 @@
     "displayName": "Language Time Tracker",
     "description": "This tracks the time spent on different programming languages.",
     "version": "1.0.0",
-    "publisher": "kaustubh",
+    "publisher": "LanguageTimeTracker",
     "engines": {
         "vscode": "^1.95.0"
     },
