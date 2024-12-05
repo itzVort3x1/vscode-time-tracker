@@ -1,71 +1,79 @@
-# time-tracker README
+# Language Time Tracker
 
-This is the README for your extension "time-tracker". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+**Language Time Tracker** is a Visual Studio Code extension that tracks the time you spend typing in different programming languages. It helps you monitor your productivity and gain insights into your coding habits.
 
 ---
 
-## Following extension guidelines
+## Features
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+-   **Track Typing Time**:
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+    -   Automatically logs the time you spend typing in different files grouped by language.
+    -   Time is saved persistently and grouped by date for easy reference.
 
-## Working with Markdown
+-   **Tree View in Activity Bar**:
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+    -   View your typing time grouped by date and language in the **Activity Bar** under the "Language Time Tracker" icon.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+-   **Status Bar Display**:
 
-## For more information
+    -   Shows the current language and typing time in the **status bar**.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+-   **Manage Time Records**:
+    -   Clear or delete time records directly from the activity bar tree view.
 
-**Enjoy!**
+---
+
+## Installation
+
+1. Install the extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+2. Alternatively, you can download the `.vsix` file from the [Releases Page](https://github.com/your-repo/language-time-tracker/releases) and install it manually:
+    - Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+    - Select `Install from VSIX`.
+    - Choose the downloaded `.vsix` file.
+
+---
+
+## Usage
+
+1. **Start Tracking**:
+
+    - Open any file in Visual Studio Code and start typing. The extension automatically logs your typing time.
+
+2. **View Time Records**:
+
+    - Click the **Clock Icon** in the Activity Bar to open the "Languages and Time" tree view.
+    - Expand dates to see time spent on each language.
+
+3. **Manage Time Records**:
+
+    - Right-click on a language in the tree view to **Clear Time** (reset to 0)
+
+4. **Monitor in Status Bar**:
+    - Check the status bar to see the current language and total typing time for the day.
+
+---
+
+## Commands
+
+-   **Clear Time**:
+
+    -   Resets the time logged for a specific language on a specific date.
+
+---
+
+## Settings
+
+No configuration is required. All data is stored locally in a JSON file within the extension's storage directory.
+
+---
+
+## Development
+
+### Prerequisites
+
+-   **Node.js**: Ensure you have Node.js installed.
+-   **VSCE**: Install the Visual Studio Code Extension Manager:
+    ```bash
+    npm install -g @vscode/vsce
+    ```
