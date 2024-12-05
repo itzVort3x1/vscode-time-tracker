@@ -1,9 +1,20 @@
 {
     "name": "language-time-tracker",
-    "displayName": "Kaustubh",
+    "displayName": "Language Time Tracker",
     "description": "This tracks the time spent on different programming languages.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "LanguageTimeTracker",
+    "keywords": [
+        "languageTimeTracker",
+        "language",
+        "time",
+        "tracker",
+        "time tracker",
+        "time tracking",
+        "language tracking",
+        "language time",
+        "time spent"
+    ],
     "engines": {
         "vscode": "^1.95.0"
     },
